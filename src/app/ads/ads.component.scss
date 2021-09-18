@@ -1,0 +1,14 @@
+@import "/../myProject/src/colors.scss";
+
+.carousel-caption {
+  position: absolute;
+  top: 28vh;
+  h1 {
+    color: white !important;
+    font-size: 44px;
+  }
+  h2 {
+    color: white !important;
+    font-size: 34px;
+  }
+}

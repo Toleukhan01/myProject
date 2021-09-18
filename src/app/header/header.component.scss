@@ -1,0 +1,21 @@
+@import "/../myProject/src/colors.scss";
+
+.header{
+  background-color: white;
+  box-sizing: border-box;
+}
+
+ul {
+  li {
+    margin-right: 30px;
+    a{
+      color: $gray;
+      font-weight: 500;
+      font-size: 14px;
+      &:hover{
+        color: $primary-green;
+        transition: 0.2s ease-in-out;
+      }
+    }
+  }
+}

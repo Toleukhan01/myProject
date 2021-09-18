@@ -1,0 +1,63 @@
+@import "/../myProject/src/colors.scss";
+
+* {
+  font-family: "OpenSans*";
+  word-break: break-all;
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100%;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin-bottom: 0;
+  color: $gray;
+}
+
+p{
+  color: $gray;
+}
+
+button {
+  outline-style: none;
+  font-size: 14px !important;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+    color: white !important;
+  }
+  &.green-btn {
+    background-color: $primary-green;
+    color: white;
+  }
+  &.square {
+    border-radius: 15px;
+    font-size: 20px !important;
+  }
+  &.circled {
+    border-radius: 50px;
+  }
+}
+
+a {
+  text-decoration: none !important;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.logo {
+  width: 180px;
+}
