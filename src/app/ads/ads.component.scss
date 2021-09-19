@@ -1,4 +1,5 @@
 @import "/../myProject/src/colors.scss";
+@import "/../myProject/src/styles.scss";
 
 .carousel-caption {
   position: absolute;
@@ -11,4 +12,8 @@
     color: white !important;
     font-size: 34px;
   }
+}
+
+button {
+  font-size: 20px !important;
 }

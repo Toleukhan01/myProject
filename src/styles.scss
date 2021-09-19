@@ -1,4 +1,5 @@
 @import "/../myProject/src/colors.scss";
+@import url('https://unpkg.com/bootstrap@5.1.1/dist/css/bootstrap.min.css');
 
 * {
   font-family: "OpenSans*";
@@ -30,7 +31,8 @@ p{
 }
 
 button {
-  outline-style: none;
+  outline-style: none !important;
+  box-shadow: none !important;
   font-size: 14px !important;
   &:hover {
     opacity: 0.8;
@@ -41,9 +43,19 @@ button {
     background-color: $primary-green;
     color: white;
   }
+  &.blue-btn {
+    background-color: $blue;
+    color: white;
+  }
+  &.transperent-btn {
+    background-color: transparent;
+    border: 1px solid rgba($color: $gray, $alpha: 0.5);
+    &:hover{
+      color: $gray !important;
+    }
+  }
   &.square {
     border-radius: 15px;
-    font-size: 20px !important;
   }
   &.circled {
     border-radius: 50px;
