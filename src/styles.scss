@@ -1,5 +1,5 @@
 @import "/../myProject/src/colors.scss";
-@import url('https://unpkg.com/bootstrap@5.1.1/dist/css/bootstrap.min.css');
+@import url("https://unpkg.com/bootstrap@5.1.1/dist/css/bootstrap.min.css");
 
 * {
   font-family: "OpenSans*";
@@ -15,6 +15,12 @@ body {
   font-size: 14px;
 }
 
+.fa,
+.far,
+.fas {
+  font-family: "Font Awesome 5 Free" !important;
+}
+
 h1,
 h2,
 h3,
@@ -26,7 +32,7 @@ h6 {
   color: $gray;
 }
 
-p{
+p {
   color: $gray;
 }
 
@@ -50,7 +56,7 @@ button {
   &.transperent-btn {
     background-color: transparent;
     border: 1px solid rgba($color: $gray, $alpha: 0.5);
-    &:hover{
+    &:hover {
       color: $gray !important;
     }
   }
