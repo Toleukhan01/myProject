@@ -1,4 +1,4 @@
-<div class="container header">
+<div class="container header d-md-block d-none" id="desktop">
   <nav class="navbar navbar-expand-lg py-3">
     <a href="#">
       <img src="/assets/logo.png" class="logo">
@@ -20,9 +20,40 @@
         <a href="#" class="text-uppercase">Find out more</a>
       </li>
     </ul>
-  
+
     <div class="text-end">
       <button class="btn green-btn circled px-4 text-uppercase py-2">Login</button>
     </div>
   </nav>
+</div>
+
+<div class="container  d-md-none d-block px-0" id="mobile">
+  <div class="content">
+
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <li class="nav-item">
+            <a href="#" class="text-uppercase my-5">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="text-uppercase">How it works</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="text-uppercase">Discover a project</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="text-uppercase">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="text-uppercase">Find out more</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </div>
