@@ -39,13 +39,18 @@ nav {
   height: 65px;
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 #menuToggle {
   display: flex;
   flex-direction: column;
   position: relative;
   top: 25px;
   left: 25px;
-  z-index: 1;
+  z-index: 100000000000000;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -57,7 +62,7 @@ nav {
   position: absolute;
   cursor: pointer;
   opacity: 0;
-  z-index: 2;
+  z-index: 200000000000000;
 }
 
 #menuToggle span {
@@ -68,10 +73,10 @@ nav {
   position: relative;
   background: $gray;
   border-radius: 3px;
-  z-index: 1;
+  z-index: 100000000000000;
   transform-origin: 5px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    opacity 0.55s ease;
+  opacity 0.55s ease;
 }
 
 #menuToggle span:first-child {
@@ -99,7 +104,7 @@ nav {
 #menu {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh !important;
   box-shadow: 0 0 10px #85888c;
   margin: -50px 0 0 -25px;
   padding: 50px;
@@ -120,7 +125,3 @@ nav {
   transform: none;
 }
 
-ul {
-  padding: 0;
-  list-style-type: none;
-}

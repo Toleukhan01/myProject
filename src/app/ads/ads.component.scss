@@ -17,3 +17,12 @@
 button {
   font-size: 20px !important;
 }
+
+@media(max-width:760px){
+  h1{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 14px;
+  }
+}
