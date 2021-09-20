@@ -1,0 +1,61 @@
+@import "/../myProject/src/colors.scss";
+
+.block-name {
+  margin-top: 3%;
+}
+
+p {
+  font-size: 18px;
+}
+
+span {
+  font-size: 14px;
+}
+
+.bottom-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid white;
+  border-right: 20px solid transparent;
+
+  &.left {
+    left: 260px;
+  }
+
+  &.right {
+    right: 260px;
+  }
+}
+
+.user-comment {
+  margin-top: 8%;
+}
+
+.user-info {
+  position: absolute;
+
+  &.left {
+    left: 180px;
+  }
+
+  &.right {
+    right: 180px;
+  }
+
+  .user-photo {
+    width: 45px;
+    border-radius: 5px;
+  }
+
+  .user-name {
+    font-size: 16px;
+    color: $gray;
+    font-weight: 600;
+  }
+}
+
+.white-block {
+  background-color: white;
+  border-radius: 10px;
+}

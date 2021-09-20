@@ -1,12 +1,51 @@
-button{
-    max-width: 187px;
-    width: 100%;
+@import "/../myProject/src/colors.scss";
+
+button {
+  max-width: 187px;
+  width: 100%;
 }
 
-.card{
-    padding: 0 !important;
-    border-top-left-radius: 10px !important;
-    border-top-right-radius: 10px !important;
-    max-width: 315px;
-    width: 100%;
+.card {
+  padding: 0 !important;
+  border-radius: 15px !important;
+  max-width: 315px;
+  width: 100%;
+  border: 1px solid rgba($color: $gray, $alpha: 0.5) !important;
+  background-color: #f7f7f7;
+}
+
+.card-img-top {
+  border-top-left-radius: calc(0.25rem - -10px) !important;
+  border-top-right-radius: calc(0.25rem - -10px) !important;
+}
+
+h6 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+}
+
+.progress {
+  border-radius: 10px;
+}
+
+::ng-deep.progress-bar {
+  background-color: $primary-green !important;
+}
+
+.progress-description {
+  font-size: 12px;
+  color: $gray;
+}
+
+.triangle {
+  border-top: 8px solid transparent;
+  border-left: 15px solid $primary-green;
+  border-bottom: 8px solid transparent;
+}
+
+.details-link:hover{
+  color: $gray !important;
 }

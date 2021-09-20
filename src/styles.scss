@@ -70,6 +70,7 @@ button {
 
 a {
   text-decoration: none !important;
+  color: $gray !important;
 
   &:hover {
     text-decoration: none !important;
@@ -78,4 +79,41 @@ a {
 
 .logo {
   width: 180px;
+}
+
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 22;
+  padding-bottom: 0px !important;
+
+  .triangle-text{
+    position: absolute;
+    top: 15px;
+    left: 6px;
+    transform: rotate(-45deg);
+    color: white;
+    font-size: 14px;
+  }
+}
+
+.bottom-right{
+  position: absolute;
+  bottom: 280px;
+  right: 15px;
+  background-color: $blue-light;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.primary-green{
+  color: $primary-green;
+}
+
+.divider{
+  border-bottom: 1px solid rgba($color: $gray, $alpha: 0.5);
+  width: 100%;
+  padding-bottom: 15px;
 }
